@@ -48,8 +48,8 @@ export default defineComponent({
       <figcaption id="author" :key="number">- {{ author }}.</figcaption>
       <a href="twitter.com/intent/tweet" id="tweet-quote">
         <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="twitter-dark-scheme.png" alt="twitter">
-        <img src="twitter-light-scheme.png" alt="twitter">
+          <source media="(prefers-color-scheme: dark)" srcset="../twitter-dark-scheme.png" alt="twitter">
+        <img src="../twitter-light-scheme.png" alt="twitter">
         </picture>
         </a>
       <button id="new-quote" @click="loadQuote" :key="number">NEW QUOTE</button>
