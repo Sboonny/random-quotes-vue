@@ -47,7 +47,7 @@ export default defineComponent({
       <blockquote id="text" :key="number">{{ quotes }}</blockquote>
       <figcaption id="author" :key="number">- {{ author }}.</figcaption>
       <a href="twitter.com/intent/tweet" id="tweet-quote">Tweet Quote</a>
-      <button id="new-quote" @click="loadQuote" :key="number">NEW QUOTE</button>
+      <button id="new-quote" @click="loadQuote" :key="number" role="button">NEW QUOTE</button>
     </figure>
   </main>
 </template>
