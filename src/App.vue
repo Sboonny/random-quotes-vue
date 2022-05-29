@@ -134,8 +134,9 @@ main figure a {
   padding-inline: 1em;
   padding-block: 1.5em;
   text-decoration: none;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
+  font-size: .9em;
 }
 
 
