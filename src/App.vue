@@ -46,12 +46,7 @@ export default defineComponent({
     <figure id="quote-box">
       <blockquote id="text" :key="number">{{ quotes }}</blockquote>
       <figcaption id="author" :key="number">- {{ author }}.</figcaption>
-      <a href="twitter.com/intent/tweet" id="tweet-quote">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="../twitter-dark-scheme.png" alt="twitter">
-        <img src="../twitter-light-scheme.png" alt="twitter">
-        </picture>
-        </a>
+      <a href="twitter.com/intent/tweet" id="tweet-quote">Tweet Quote</a>
       <button id="new-quote" @click="loadQuote" :key="number">NEW QUOTE</button>
     </figure>
   </main>
@@ -132,10 +127,13 @@ main figure figcaption {
   }
 main figure a {
   grid-area: twitter;
+  aspect-ratio: 3/1;
+  cursor: pointer;
+  background-color: var(--ft-color);
+  color: var(--bg-color);
+  padding-inline: 1em;
+  padding-block: 1.5em;
 }
-main figure a picture img {
-  aspect-ratio: 1;
-  width: 40px;
-}
+
 
 </style>
