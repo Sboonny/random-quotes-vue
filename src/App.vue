@@ -46,7 +46,7 @@ export default defineComponent({
     <figure id="quote-box">
       <blockquote id="text" :key="number">{{ quotes }}</blockquote>
       <figcaption id="author" :key="number">- {{ author }}.</figcaption>
-      <a href="twitter.com/intent/tweet" id="tweet-quote">Tweet Quote</a>
+      <a href="https://twitter.com/intent/tweet" id="tweet-quote">Tweet Quote</a>
       <button id="new-quote" @click="loadQuote" :key="number" role="button">NEW QUOTE</button>
     </figure>
   </main>
@@ -133,6 +133,9 @@ main figure a {
   color: var(--bg-color);
   padding-inline: 1em;
   padding-block: 1.5em;
+  text-decoration: none;
+  font-weight: 800;
+  text-align: center;
 }
 
 
